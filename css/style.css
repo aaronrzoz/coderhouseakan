@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+    /*Sizes*/
+    --phi: 1.61803398875;
+    --sizeh1: 100vh;
+    --sizeh2: calc(var(--sizeh1) / var(--phi));
+    --sizeh3: calc(var(--sizeh2) / var(--phi));
+    --sizeh4: calc(var(--sizeh3) / var(--phi));
+    --sizeh5: calc(var(--sizeh4) / var(--phi));
+    --sizeh6: calc(var(--sizeh5) / var(--phi));
+    --sizeh7: calc(var(--sizeh6) / var(--phi));
+    --sizeh8: calc(var(--sizeh7) / var(--phi));
+    --sizeh9: calc(var(--sizeh8) / var(--phi));
+    --sizeh10: calc(var(--sizeh9) / var(--phi));
+    --sizeh11: calc(var(--sizeh10) / var(--phi));
+    --sizeh12: calc(var(--sizeh11) / var(--phi));
+    --sizeh13: calc(var(--sizeh12) / var(--phi));
+    --sizeh3by2: calc(var(--sizeh3) * 2);
+    --sizeh5by3: calc(var(--sizeh5) * 3);
+
+    --sizew1: 100vw;
+    --sizew2: calc(var(--sizew1) / var(--phi));
+    --sizew3: calc(var(--sizew2) / var(--phi));
+    --sizew4: calc(var(--sizew3) / var(--phi));
+    --sizew5: calc(var(--sizew4) / var(--phi));
+    --sizew6: calc(var(--sizew5) / var(--phi));
+    --sizew7: calc(var(--sizew6) / var(--phi));
+    --sizew8: calc(var(--sizew7) / var(--phi));
+    --sizew9: calc(var(--sizew8) / var(--phi));
+    --sizew10: calc(var(--sizew9) / var(--phi));
+    --sizew11: calc(var(--sizew10) / var(--phi));
+    --sizew12: calc(var(--sizew11) / var(--phi));
+    --sizew13: calc(var(--sizew12) / var(--phi));
+    --sizew3by2: calc(var(--sizew3) * 2);
+    --sizew5by3: calc(var(--sizew5) * 3);
+
+    --text1: clamp(0.875rem, 1rem, 1.125rem);
+    --text2: calc(var(--text1) * var(--phi));
+    --text3: calc(var(--text2) * var(--phi));
+    --text4: calc(var(--text3) * var(--phi));
+    --text5: calc(var(--text4) * var(--phi));
+
+    /*Colors*/
+    --black: #111111;
+    --white: whitesmoke;
+}
+
+/* Body CSS */
+body {
+    background-color: var(--white);
+}
+
+/* Text CSS */
+h1 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--text4);
+    color: var(--black);
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--text3);
+    color: var(--black);
+}
+
+h3 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--text2);
+    color: var(--black);
+}
+
+p {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--text1);
+}
+
+/* Elements CSS */
+.button1 {
+    padding: var(--sizeh12) var(--sizeh9);
+    border: 0;
+    background-color: var(--black);
+    size: auto;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--text2);
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Footer/Header CSS */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 0 var(--sizew8) 0 var(--sizew8);
+    height: var(--sizeh7)
+}
+
+header a {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--text1);
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--sizew10);
+}
+
+footer {
+    display: flex;
+    flex-direction: row wrap;
+    background-color: var(--black);
+    height: var(--sizeh5);
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--white);
+}
+
+/* Main CSS */
+
+main {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+/*---------------------------- Index Page CSS ----------------------------*/
+.hero {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: var(--sizeh2);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.hero div {
+    position: absolute;
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    gap: var(--sizeh10);
+    bottom: var(--sizeh6);
+    left: var(--sizew7);
+    align-items: flex-start;
+}
+
+.hero h2 {
+    color: var(--white);
+    padding: 0 var(--sizew7) 0 0;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--sizeh8) var(--sizew7);
+    gap: var(--sizeh8);
+    align-items: center;
+}
+
+.destacados ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--sizew6);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.destacados div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizeh9);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.destacadosimg {
+    height: var(--sizeh4);
+    width: var(--sizeh3);
+    align-items: center;
+}
+
+.destacados img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* CSS */
