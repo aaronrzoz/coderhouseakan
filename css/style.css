@@ -235,4 +235,48 @@ section {
     margin: 0;
 }
 
-/* CSS */
+/* ----------- Colecciones page CSS ------------------- */
+
+.colecciones {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-auto-rows: auto;
+    gap: var(--sizew9);
+    padding: var(--sizew9);
+    justify-items: center;
+    align-items: center;
+}
+
+.colecciones-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sizew9);
+    width: 100%;
+}
+
+.colecciones-title {
+    grid-column: span 2;
+}
+
+.colecciones-nueva {
+    grid-column: span 2;
+}
+
+.colecciones-nueva div{
+    height: var(--sizeh2);
+}
+
+.colecciones-item-new {
+    width: 100%;
+    height: var(--sizeh2);
+    object-fit: cover;
+}
+
+.colecciones-item-img {
+    width: 100%;
+    height: var(--sizeh3);
+    object-fit: cover;
+}
