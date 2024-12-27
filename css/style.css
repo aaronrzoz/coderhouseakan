@@ -306,10 +306,14 @@ section {
 
 /* ----------- Media ------------------- */
 
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 1.055/1) {
     .navbar-nav {
         gap: var(--sizew10);
         background-color: var(--black);
         padding: var(--sizeh9);
-    } 
+    }
+
+    .colecciones-item {
+        grid-column: span 2;
+    }
 }
