@@ -1,0 +1,18 @@
+/* Buttons */
+%button1 {
+    padding: var(--sizeh12) var(--sizeh9);
+    border: 0;
+    background-color: $primaryColor;
+    size: auto;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--text2);
+    color: $secondaryColor;
+    text-decoration: none;
+}
+
+.button1 {
+    @extend %button1;
+}

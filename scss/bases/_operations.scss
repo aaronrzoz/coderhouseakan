@@ -1,0 +1,53 @@
+/* Operations */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//* Variables *//
+
+/* Colors */
+$primaryColor: #111111;
+$secondaryColor: whitesmoke;
+
+:root {
+    /*Sizes*/
+    --phi: 1.61803398875;
+    --sizeh1: 100vh;
+    --sizeh2: calc(var(--sizeh1) / var(--phi));
+    --sizeh3: calc(var(--sizeh2) / var(--phi));
+    --sizeh4: calc(var(--sizeh3) / var(--phi));
+    --sizeh5: calc(var(--sizeh4) / var(--phi));
+    --sizeh6: calc(var(--sizeh5) / var(--phi));
+    --sizeh7: calc(var(--sizeh6) / var(--phi));
+    --sizeh8: calc(var(--sizeh7) / var(--phi));
+    --sizeh9: calc(var(--sizeh8) / var(--phi));
+    --sizeh10: calc(var(--sizeh9) / var(--phi));
+    --sizeh11: calc(var(--sizeh10) / var(--phi));
+    --sizeh12: calc(var(--sizeh11) / var(--phi));
+    --sizeh13: calc(var(--sizeh12) / var(--phi));
+    --sizeh3by2: calc(var(--sizeh3) * 2);
+    --sizeh5by3: calc(var(--sizeh5) * 3);
+
+    --sizew1: 100vw;
+    --sizew2: calc(var(--sizew1) / var(--phi));
+    --sizew3: calc(var(--sizew2) / var(--phi));
+    --sizew4: calc(var(--sizew3) / var(--phi));
+    --sizew5: calc(var(--sizew4) / var(--phi));
+    --sizew6: calc(var(--sizew5) / var(--phi));
+    --sizew7: calc(var(--sizew6) / var(--phi));
+    --sizew8: calc(var(--sizew7) / var(--phi));
+    --sizew9: calc(var(--sizew8) / var(--phi));
+    --sizew10: calc(var(--sizew9) / var(--phi));
+    --sizew11: calc(var(--sizew10) / var(--phi));
+    --sizew12: calc(var(--sizew11) / var(--phi));
+    --sizew13: calc(var(--sizew12) / var(--phi));
+    --sizew3by2: calc(var(--sizew3) * 2);
+    --sizew5by3: calc(var(--sizew5) * 3);
+
+    --text1: clamp(0.875rem, 1rem, 1.125rem);
+    --text2: calc(var(--text1) * var(--phi));
+    --text3: calc(var(--text2) * var(--phi));
+    --text4: calc(var(--text3) * var(--phi));
+    --text5: calc(var(--text4) * var(--phi));
+}

@@ -1,0 +1,12 @@
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row wrap;
+    background-color: $primaryColor;
+    height: var(--sizeh5);
+    justify-content: center;
+    align-items: center;
+    p {
+        color: $secondaryColor;
+    }
+}

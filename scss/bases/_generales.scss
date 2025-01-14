@@ -1,0 +1,55 @@
+/* Generales */
+
+/* Body CSS */
+body {
+    background-color: $secondaryColor;
+}
+
+/* Text CSS */
+h1 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--text4);
+    color: $primaryColor;
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--text3);
+    color: $primaryColor;
+}
+
+h3 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--text2);
+    color: $primaryColor;
+}
+
+p {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--text1);
+}
+
+main {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}

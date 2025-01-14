@@ -1,0 +1,11 @@
+{
+  "name": "akan",
+  "version": "1.0.0",
+  "description": "This is a project for learning the basics about web static development. The project is a e-commerce platform that sells art collections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

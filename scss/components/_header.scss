@@ -1,0 +1,48 @@
+/* Header */
+
+header {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primaryColor;
+        padding: 0 var(--sizew8) 0 var(--sizew8);
+        height: var(--sizeh7);
+        z-index: 1;
+    }
+    a {
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: var(--text1);
+        color: $secondaryColor;
+        text-decoration: none;
+        &:hover {
+            color: $secondaryColor;
+        }
+        &:focus {
+            color: $secondaryColor;
+        }
+    }
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 0 var(--sizew8) 0 var(--sizew8);
+    height: var(--sizeh7);
+}
+
+.navbar-nav {
+    gap: var(--sizew10);
+} 
+
+.navdiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bi-list {
+    fill: $secondaryColor;
+    height: var(--text2);
+}
