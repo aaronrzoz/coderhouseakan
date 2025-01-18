@@ -101,6 +101,15 @@ section {
   margin: 0;
 }
 
+@keyframes enfoqueBoton {
+  0% {
+    border-radius: 0;
+  }
+  100% {
+    border-radius: var(--sizeh10);
+    transform: scale(1.1);
+  }
+}
 /* Header */
 header nav {
   display: flex;
@@ -160,6 +169,12 @@ header a:focus {
   font-size: var(--text2);
   color: whitesmoke;
   text-decoration: none;
+}
+.button1:hover {
+  color: whitesmoke;
+  animation: enfoqueBoton 1s;
+  animation-fill-mode: forwards;
+  transition: 1s;
 }
 
 /* Footer */
@@ -240,6 +255,10 @@ footer p {
   height: var(--sizeh4);
   width: var(--sizeh3);
   align-items: center;
+  transition: 1s;
+}
+.destacadosimg:hover {
+  transform: scale(1.1);
 }
 
 /* Colecciones Page */

@@ -11,6 +11,12 @@
     font-size: var(--text2);
     color: $secondaryColor;
     text-decoration: none;
+    &:hover {
+        color: $secondaryColor;
+        animation: enfoqueBoton 1s;
+        animation-fill-mode: forwards;
+        transition: 1s;
+    }
 }
 
 .button1 {

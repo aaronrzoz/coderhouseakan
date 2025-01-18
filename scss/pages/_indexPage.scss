@@ -65,4 +65,8 @@
     height: var(--sizeh4);
     width: var(--sizeh3);
     align-items: center;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
