@@ -48,4 +48,13 @@
             width: 100%;
         }
     }
+
+    .proximosEventos {
+        div {
+            grid-column: span 2;
+            img {
+                height: var(--sizeh3);
+            }
+        }
+    }
 }

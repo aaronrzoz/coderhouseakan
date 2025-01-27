@@ -1,0 +1,62 @@
+.eventos {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: var(--sizew9);
+    gap: var(--sizeh9);
+    align-items: center;
+}
+
+.proximosEventos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: var(--sizew10);
+    width: 100%;
+    justify-items: center;
+    h2 {
+        grid-column: span 2;
+    }
+    div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: var(--sizeh9);
+        width: 100%;
+        img {
+            height: var(--sizeh2);
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.eventosPasados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto var(--sizeh4) var(--sizeh4) var(--sizeh4) var(--sizeh4);
+    gap: var(--sizew10);
+    width: 100%;
+    justify-items: center;
+    h2 {
+        grid-column: span 3;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.eventoMasReciente {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.eventoMedio {
+    grid-column: span 2;
+}
+
+.eventoMenosReciente {
+    grid-column: span 2;
+}

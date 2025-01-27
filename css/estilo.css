@@ -164,7 +164,7 @@ header a:focus {
   size: auto;
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: var(--text2);
   color: whitesmoke;
@@ -265,7 +265,7 @@ footer p {
 .colecciones {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
   gap: var(--sizew9);
   padding: var(--sizew9);
@@ -362,6 +362,97 @@ footer p {
   gap: var(--sizeh11);
 }
 
+.eventos {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--sizew9);
+  gap: var(--sizeh9);
+  align-items: center;
+}
+
+.proximosEventos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: var(--sizew10);
+  width: 100%;
+  justify-items: center;
+}
+.proximosEventos h2 {
+  grid-column: span 2;
+}
+.proximosEventos div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--sizeh9);
+  width: 100%;
+}
+.proximosEventos div img {
+  height: var(--sizeh2);
+  width: 100%;
+  object-fit: cover;
+}
+
+.eventosPasados {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto var(--sizeh4) var(--sizeh4) var(--sizeh4) var(--sizeh4);
+  gap: var(--sizew10);
+  width: 100%;
+  justify-items: center;
+}
+.eventosPasados h2 {
+  grid-column: span 3;
+}
+.eventosPasados img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.eventoMasReciente {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.eventoMedio {
+  grid-column: span 2;
+}
+
+.eventoMenosReciente {
+  grid-column: span 2;
+}
+
+.contacto {
+  width: 100%;
+  padding: var(--sizew9);
+  display: flex;
+  flex-direction: column;
+}
+.contacto form label {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text1);
+  margin: var(--sizew12);
+}
+.contacto form input {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text1);
+  margin: var(--sizew12);
+  padding: var(--sizew13);
+}
+
+.mainContacto {
+  height: 100vh;
+}
+
 /* Queries */
 @media (max-aspect-ratio: 1.055/1) {
   h1 {
@@ -400,6 +491,12 @@ footer p {
   }
   .nosotrosSection img {
     width: 100%;
+  }
+  .proximosEventos div {
+    grid-column: span 2;
+  }
+  .proximosEventos div img {
+    height: var(--sizeh3);
   }
 }
 
