@@ -27,6 +27,22 @@
         grid-column: span 2;
     }
 
+    .loQueViene {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        div {
+            width: 100%;
+            a {
+                width: var(--sizew2);
+            }
+        }
+        img {
+            width: 100%;
+            height: var(--sizeh2);
+        }
+    }
+
 }
 
 @media (max-aspect-ratio: 1.50/1) {
