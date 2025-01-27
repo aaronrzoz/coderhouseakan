@@ -1,6 +1,22 @@
 /* Queries */
 
 @media (max-aspect-ratio: 1.055/1) {
+    h1 {
+        font-size: var(--text3);
+    }
+
+    h2 {
+        font-size: var(--text2);
+    }
+
+    h3{
+        font-size: var(--text1);
+    }
+
+    %button1 {
+        font-size: var(--text1);
+    }
+
     .navbar-nav {
         gap: var(--sizew10);
         background-color: $primaryColor;
@@ -9,5 +25,27 @@
 
     .colecciones-item {
         grid-column: span 2;
+    }
+
+}
+
+@media (max-aspect-ratio: 1.50/1) {
+    .nosotrosMain {
+        img {
+            height: var(--sizeh3);
+        }
+    }
+
+    .nosotrosSection {
+        flex-wrap: wrap;
+        div {
+            width: 100%;
+            div {
+                align-items: center;
+            }
+        }
+        img {
+            width: 100%;
+        }
     }
 }

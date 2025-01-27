@@ -1,0 +1,56 @@
+.nosotrosMain {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--sizew9);
+    padding: var(--sizew9);
+    justify-items: center;
+    align-items: center;
+    img {
+        height: var(--sizeh2);
+    }
+}
+
+.nosotrosSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sizew9);
+    div{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        gap: var(--sizeh10);
+        div {
+            display: flex;
+            align-items: flex-end;
+            a {
+                width: auto;
+            }
+        }
+    }
+    img {
+        width: auto;
+        object-fit: cover;
+        margin: 0;
+    }
+}
+
+.mecenasSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--sizeh9);
+    img {
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sizeh11);
+    }
+}
